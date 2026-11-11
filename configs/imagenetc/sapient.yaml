@@ -1,0 +1,39 @@
+# Hyperparameters from Appendix E.
+CKPT_DIR: ./checkpoints
+CORRUPTION:
+  DATASET: imagenet
+  NUM_EX: 5000
+  SEVERITY:
+  - 5
+  TYPE:
+  - gaussian_noise
+  - shot_noise
+  - impulse_noise
+  - defocus_blur
+  - glass_blur
+  - motion_blur
+  - zoom_blur
+  - snow
+  - frost
+  - fog
+  - brightness
+  - contrast
+  - elastic_transform
+  - pixelate
+  - jpeg_compression
+DATA_DIR: ./data
+MODEL:
+  ADAPTATION: cotta
+  ARCH: StandardAdapt_R50
+  EPISODIC: false
+OPTIM:
+  BETA: 0.9
+  LR: 0.04
+  METHOD: SGD
+  RST: 0.001
+  STEPS: 1
+  WD: 0.0
+RNG_SEED: 1
+SAVE_DIR: ./output/imagenetc
+TEST:
+  BATCH_SIZE: 64

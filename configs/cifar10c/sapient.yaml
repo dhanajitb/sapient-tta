@@ -1,0 +1,41 @@
+# Hyperparameters from Appendix E.
+CKPT_DIR: ./checkpoints
+CORRUPTION:
+  DATASET: cifar10
+  NUM_EX: 10000
+  SEVERITY:
+  - 5
+  TYPE:
+  - gaussian_noise
+  - shot_noise
+  - impulse_noise
+  - defocus_blur
+  - glass_blur
+  - motion_blur
+  - zoom_blur
+  - snow
+  - frost
+  - fog
+  - brightness
+  - contrast
+  - elastic_transform
+  - pixelate
+  - jpeg_compression
+DATA_DIR: ./data
+MODEL:
+  ADAPTATION: cotta
+  ARCH: StandardAdpt
+  EPISODIC: false
+OPTIM:
+  AP: 0.92
+  BETA: 0.9
+  LR: 0.00125
+  METHOD: Adam
+  MT: 0.999
+  RST: 0.0
+  STEPS: 1
+  WD: 0.0
+RNG_SEED: 1
+SAVE_DIR: ./output/cifar10c
+TEST:
+  BATCH_SIZE: 200

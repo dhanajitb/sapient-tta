@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the SAPIENT paper."
+title: "SAPIENT: Continual Test-time Adaptation via Lightweight plug-and-play Adapters"
+type: software
+authors:
+  - family-names: Brahma
+    given-names: Dhanajit
+  - family-names: Joshi
+    given-names: Abhinav
+  - family-names: Modi
+    given-names: Ashutosh
+  - family-names: Rai
+    given-names: Piyush
+repository-code: "https://github.com/dhanajitb/sapient-tta"
+preferred-citation:
+  type: article
+  title: "SAPIENT: Continual Test-time Adaptation via Lightweight plug-and-play Adapters"
+  authors:
+    - family-names: Brahma
+      given-names: Dhanajit
+    - family-names: Joshi
+      given-names: Abhinav
+    - family-names: Modi
+      given-names: Ashutosh
+    - family-names: Rai
+      given-names: Piyush
+  journal: Transactions on Machine Learning Research
+  year: 2026
+  url: "https://openreview.net/forum?id=OKx9Vw9nZM"

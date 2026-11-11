@@ -1,0 +1,16 @@
+from collections import OrderedDict
+from typing import Any, Dict, Dict as OrderedDictType
+
+from robustbench.model_zoo.cifar10 import cifar_10_models
+from robustbench.model_zoo.imagenet import imagenet_models
+from robustbench.model_zoo.enums import BenchmarkDataset, ThreatModel
+
+ModelsDict = OrderedDictType[str, Dict[str, Any]]
+ThreatModelsDict = OrderedDictType[ThreatModel, ModelsDict]
+BenchmarkDict = OrderedDictType[BenchmarkDataset, ThreatModelsDict]
+
+model_dicts: BenchmarkDict = OrderedDict([
+    (BenchmarkDataset.cifar_10, cifar_10_models),
+    (BenchmarkDataset.imagenet, imagenet_models),
+    (BenchmarkDataset.imagenet3d, imagenet_models)  # imagenet 3d dataset added
+])

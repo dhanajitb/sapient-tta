@@ -1,0 +1,38 @@
+# Hyperparameters from Appendix E.
+CKPT_DIR: ./checkpoints
+CORRUPTION:
+  DATASET: imagenet3d
+  NUM_EX: 5000
+  SEVERITY:
+  - 5
+  TYPE:
+  - near_focus
+  - h265_abr
+  - xy_motion_blur
+  - iso_noise
+  - z_motion_blur
+  - h265_crf
+  - low_light
+  - bit_error
+  - color_quant
+  - flash
+  - fog_3d
+  - far_focus
+DATA_DIR: ./data
+MODEL:
+  ADAPTATION: cotta
+  ARCH: StandardAdapt_R50
+  EPISODIC: false
+OPTIM:
+  BETA: 0.9
+  LR: 0.03
+  METHOD: SGD
+  PERC: 0.003
+  RST: 0.001
+  SPW: 1e-10
+  STEPS: 1
+  WD: 0.0
+RNG_SEED: 1
+SAVE_DIR: ./output/imagenet3dcc
+TEST:
+  BATCH_SIZE: 64

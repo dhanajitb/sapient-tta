@@ -4,7 +4,7 @@ Official implementation of **SAPIENT: Continual Test-time Adaptation via Lightwe
 
 Dhanajit Brahma, Abhinav Joshi, Ashutosh Modi, and Piyush Rai
 
-[Paper](https://openreview.net/forum?id=OKx9Vw9nZM)
+[Paper](https://openreview.net/forum?id=OKx9Vw9nZM) | [Video](https://www.youtube.com/watch?v=7BFad3zYDu8)
 
 ## Installation
 
